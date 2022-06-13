@@ -7,19 +7,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>React TodoMVC</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-
 </head>
 
-<body class='learn-bar'>
-    <section class="todoapp">
+<body style="width: 100%; height: 100%;">
+    <div class="main">
+        <div class="header">
+            <div class="title">Todos</div>
+            <div>
+                <input class="header-input" type="text" placeholder="What should be done?" />
+            </div>
+        </div>
+
+        <div class="tasks-list">
+            <div class="task-item">
+                <div class="task-item__main-container">
+                    <input type="checkbox" id="scales" name="scales" checked>
+                    <div class="text">first task</div>
+                </div>
+                <div class="delete-btn">delete</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <section class="todoapp">
         <div>
             <header class="header">
                 <h1>todos</h1>
                 <input class="new-todo" placeholder="What needs to be done?">
             </header>
         </div>
-    </section>
+    </section> -->
+
+
+    <!-- <section class="main">
+        <ul class="todo-list">
+            <li>
+                <div class="view">
+                    <input class="toggle" type="checkbox">
+                    <label>
+                        <font style="vertical-align: inherit;">hello world</font>
+                    </label>
+                    <button class="destroy"></button>
+                </div>
+            </li>
+        </ul>
+    </section> -->
+    <script src="index.js"></script>
 </body>
 
 </html>
