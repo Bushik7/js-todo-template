@@ -13,46 +13,38 @@
     <div class="main">
         <div class="header">
             <div class="title">Todos</div>
-            <div>
-                <input class="header-input" type="text" placeholder="What should be done?" />
-            </div>
+            <form class="create-task-block">
+                <input name="taskName" class="header-input" type="text" placeholder="What should be done?"
+                    value="See JS tutorial">
+                <button type="submit" class="create-task-block">ADD</button>
+            </form>
         </div>
 
         <div class="tasks-list">
             <div class="task-item">
                 <div class="task-item__main-container">
-                    <input type="checkbox" id="scales" name="scales" checked>
-                    <div class="text">first task</div>
+                    <!-- <input type="checkbox" id="scales" name="scales" checked> -->
+                    <!-- <div class="text">first task</div> -->
                 </div>
-                <div class="delete-btn">delete</div>
+                <!-- <div class="delete-btn">delete</div> -->
             </div>
         </div>
     </div>
-
-
-    <!-- <section class="todoapp">
-        <div>
-            <header class="header">
-                <h1>todos</h1>
-                <input class="new-todo" placeholder="What needs to be done?">
-            </header>
+    <div class="modal-overlay modal-overlay_hidden">
+        <div class="delete-modal">
+            <h3 class="delete-modal__question">
+                Вы действительно хотите удалить эту задачу?
+            </h3>
+            <div class="delete-modal__buttons">
+                <button class="delete-modal__button delete-modal__cancel-button">
+                    Отмена
+                </button>
+                <button class="delete-modal__button delete-modal__confirm-button">
+                    Удалить
+                </button>
+            </div>
         </div>
-    </section> -->
-
-
-    <!-- <section class="main">
-        <ul class="todo-list">
-            <li>
-                <div class="view">
-                    <input class="toggle" type="checkbox">
-                    <label>
-                        <font style="vertical-align: inherit;">hello world</font>
-                    </label>
-                    <button class="destroy"></button>
-                </div>
-            </li>
-        </ul>
-    </section> -->
+    </div>
     <script src="index.js"></script>
 </body>
 
